@@ -1,5 +1,3 @@
-.Trento Web
-
 * xref:README.adoc[Web]
 ** xref:alerting/alerting.adoc[Alerting]
 ** Authentication
