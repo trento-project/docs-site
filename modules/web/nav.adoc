@@ -1,0 +1,14 @@
+.Trento Web
+
+* xref:README.adoc[Web]
+** xref:alerting/alerting.adoc[Alerting]
+** Authentication
+*** xref:authentication/jwt_specification.adoc[JWT Specification]
+*** xref:authentication/spa_flow.adoc[SPA Authentication Flow]
+** Development
+*** xref:development/environment_variables.adoc[Environment Variables]
+*** xref:development/hack_on_the_trento.adoc[Development Setup]
+** Integration
+*** xref:integration/oidc.adoc[OIDC Integration]
+** Monitoring
+*** xref:monitoring/monitoring.adoc[Monitoring]

@@ -5,13 +5,15 @@ site:
 
 content:
   sources:
-    - url: https://github.com/trento-project/docs.git
-      branches: fetch_docs_from_upstream
+    - url: .
+      branches:
+        - HEAD
 
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: ./trento-antora-ui/build/ui-bundle.zip
     snapshot: true
+
 
 output:
   dir: ./antora_public

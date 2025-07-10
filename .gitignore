@@ -1,3 +1,8 @@
 antora_public
 node_modules
-.env
+tmp_docs
+
+
+./trento-antora-ui/public/
+./trento-antora-ui/build/
+./trento-antora-ui/node_modules

@@ -1,0 +1,56 @@
+name: docs
+title: Trento
+version: ~
+nav:
+- modules/trento_documentation/nav.adoc
+- modules/web/nav.adoc
+- modules/api/nav.adoc
+- modules/developer/nav.adoc
+
+ext: 
+  collector:
+    ## Remove previous documentation
+    - clean:
+        - dir: antora_public
+        - dir: tmp_docs
+    ## Documentation Fetching from diffrent upstream repositories
+    - run:
+        - command: git clone --branch docs_migration --depth 1 https://github.com/trento-project/docs.git tmp_docs/docs
+        - command: git clone --depth 1 https://github.com/SUSE/doc-unversioned tmp_docs/docs_repo
+        - command: git clone --branch antora_readme --depth 1 https://github.com/trento-project/web.git tmp_docs/web
+
+  # Trento official documentation
+    - scan:
+      - dir: tmp_docs/docs_repo/trento/adoc
+        files: '**/*.adoc'
+        into: modules/trento_documentation/pages
+      - dir: tmp_docs/docs_repo/trento/images/src/png
+        files: '**/*.png'
+        into: modules/trento_documentation/images
+    - run:
+        command: ./scripts/generate-attributes-yaml.sh ./tmp_docs/docs_repo/trento/adoc/generic-attributes.adoc ./tmp_docs/docs_repo/antora_tmp/antora.yml
+    - scan:
+        dir: ./tmp_docs/docs_repo/antora_tmp
+        files: 'antora.yml'
+
+# Trento documentation repository
+    - scan:
+      - dir:  tmp_docs/docs/developer/
+        files: '**/*.adoc'
+        into: modules/developer/pages
+      - dir: tmp_docs/docs/developer/assets
+        files: '**/*.{png,jpg,jpeg,svg,gif}'
+        into: modules/developer/images
+
+# Trento upstream projects documentation
+    ## Trento Web
+    - scan:
+      - dir: tmp_docs/web/
+        files: 'README.adoc'
+        into: modules/web/pages
+      - dir: tmp_docs/web/guides
+        files: '**/*.adoc'
+        into: modules/web/pages/
+      - dir: tmp_docs/web/guides/
+        files: '**/*.{png,jpg,jpeg,svg,gif}'
+        into: modules/web/images/
