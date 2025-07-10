@@ -23,3 +23,7 @@ antora:
   - '@antora/collector-extension'
   - require: '@antora/lunr-extension'
     index_latest_only: true
+
+asciidoc:
+  attributes:
+    page-pagination: ''
