@@ -5,6 +5,7 @@ nav:
 - modules/trento_documentation/nav.adoc
 - modules/agent/nav.adoc
 - modules/ansible/nav.adoc
+- modules/checks/nav.adoc
 - modules/helm-charts/nav.adoc
 - modules/web/nav.adoc
 - modules/api/nav.adoc
@@ -24,6 +25,7 @@ ext:
         - command: git clone --branch fix_link --depth 1 https://github.com/trento-project/agent tmp_docs/agent
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/helm-charts tmp_docs/helm-charts 
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/ansible tmp_docs/ansible
+        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/checks tmp_docs/checks 
   # Trento official documentation
     - scan:
       - dir: tmp_docs/docs_repo/trento/adoc
@@ -80,6 +82,8 @@ ext:
       - dir: tmp_docs/ansible
         files: '*.adoc'
         into: modules/ansible/pages
-      - dir: tmp_docs/ansibles/docs
-        files: '**/*.adoc'
-        into: modules/ansible/pages
+    ## Trento Checks
+    - scan:
+      - dir: tmp_docs/checks
+        files: '*.adoc'
+        into: modules/checks/pages
