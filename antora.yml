@@ -9,7 +9,7 @@ nav:
 - modules/helm-charts/nav.adoc
 - modules/web/nav.adoc
 - modules/api/nav.adoc
-- modules/developer/nav.adoc
+- modules/docs/nav_docs.adoc
 
 ext: 
   collector:
@@ -19,11 +19,11 @@ ext:
         - dir: tmp_docs
     ## Documentation Fetching from diffrent upstream repositories
     - run:
-        - command: git clone --branch docs_migration --depth 1 https://github.com/trento-project/docs.git tmp_docs/docs
+        - command: git clone --branch convert_to_adoc --depth 1 https://github.com/trento-project/docs.git tmp_docs/docs
         - command: git clone --depth 1 https://github.com/SUSE/doc-unversioned tmp_docs/docs_repo
         - command: git clone --branch antora_readme --depth 1 https://github.com/trento-project/web.git tmp_docs/web
-        - command: git clone --branch fix_link --depth 1 https://github.com/trento-project/agent tmp_docs/agent
-        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/helm-charts tmp_docs/helm-charts 
+        - command: git clone --depth 1 https://github.com/trento-project/agent tmp_docs/agent
+        - command: git clone --depth 1 https://github.com/trento-project/helm-charts tmp_docs/helm-charts 
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/ansible tmp_docs/ansible
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/checks tmp_docs/checks 
   # Trento official documentation
@@ -42,12 +42,15 @@ ext:
 
 # Trento documentation repository
     - scan:
-      - dir:  tmp_docs/docs/developer/
+      - dir: tmp_docs/docs/
+        files: 'README.adoc'
+        into: modules/web/pages
+      - dir:  tmp_docs/docs/
         files: '**/*.adoc'
-        into: modules/developer/pages
-      - dir: tmp_docs/docs/developer/assets
+        into: modules/docs/pages/
+      - dir: tmp_docs/docs/images/
         files: '**/*.{png,jpg,jpeg,svg,gif}'
-        into: modules/developer/images
+        into: modules/docs/images/images
 
 # Trento upstream projects documentation
     ## Trento Web
