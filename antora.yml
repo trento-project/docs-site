@@ -3,12 +3,12 @@ title: Trento
 version: ~
 nav:
 - modules/trento_documentation/nav.adoc
-- modules/agent/nav.adoc
-- modules/ansible/nav.adoc
-- modules/checks/nav.adoc
-- modules/helm-charts/nav.adoc
-- modules/web/nav.adoc
-- modules/api/nav.adoc
+- modules/agent/nav_agent.adoc
+- modules/ansible/nav_ansible.adoc
+- modules/checks/nav_checks.adoc
+- modules/helm-charts/nav_helm_charts.adoc
+- modules/web/nav_web.adoc
+- modules/api/nav_api.adoc
 - modules/docs/nav_docs.adoc
 
 ext: 
