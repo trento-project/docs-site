@@ -10,6 +10,7 @@ nav:
 - modules/web/nav_web.adoc
 - modules/api/nav_api.adoc
 - modules/docs/nav_docs.adoc
+- modules/workbench/nav_workbench.adoc
 
 ext: 
   collector:
@@ -25,7 +26,9 @@ ext:
         - command: git clone --depth 1 https://github.com/trento-project/agent tmp_docs/agent
         - command: git clone --depth 1 https://github.com/trento-project/helm-charts tmp_docs/helm-charts 
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/ansible tmp_docs/ansible
-        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/checks tmp_docs/checks 
+        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/checks tmp_docs/checks
+        - command: git clone --depth 1 git@github.com:trento-project/workbench.git tmp_docs/workbench
+
   # Trento official documentation
     - scan:
       - dir: tmp_docs/docs_repo/trento/adoc
@@ -90,3 +93,11 @@ ext:
       - dir: tmp_docs/checks
         files: '*.adoc'
         into: modules/checks/pages
+    ## Trento Workbench
+    - scan:
+      - dir: tmp_docs/workbench
+        files: '*.adoc'
+        into: modules/workbench/pages
+      - dir: tmp_docs/workbench
+        files: '**/*.{png,jpg,jpeg,svg,gif}'
+        into: modules/workbench/images

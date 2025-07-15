@@ -1,4 +1,4 @@
-* xref:README.adoc[Docs]
+* xref:README.adoc[Trento Docs]
 
 ** xref:adr/README.adoc[ADR Documentation]
 *** xref:adr/0001-record-architecture-decisions.adoc[0001: Record Architecture Decisions]

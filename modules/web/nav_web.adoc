@@ -1,4 +1,4 @@
-* xref:README.adoc[Web]
+* xref:README.adoc[Trento Web]
 ** xref:alerting/alerting.adoc[Alerting]
 ** Authentication
 *** xref:authentication/jwt_specification.adoc[JWT Specification]

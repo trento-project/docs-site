@@ -1,7 +1,3 @@
-* Helm-Charts
-** xref:helm_charts/trento-server.adoc[Trento Server]
-
-
 * Wanda
 ** xref:wanda/specification.adoc[Wanda Specification]
 ** xref:wanda/expression_language.adoc[Expression Language]

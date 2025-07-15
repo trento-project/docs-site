@@ -1,4 +1,4 @@
-* xref:README.adoc[Helm Charts]
+* xref:README.adoc[Trento Helm Charts]
 ** xref:CONTRIBUTING.adoc[How to Contribute]
 ** xref:cert-manager/cert-manager.adoc[Cert Manager]
 ** xref:rabbitmq-tls/rabbitmq-tls.adoc[RabbitMQ TLS]
