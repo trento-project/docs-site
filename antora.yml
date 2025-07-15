@@ -12,6 +12,7 @@ nav:
 - modules/docs/nav_docs.adoc
 - modules/workbench/nav_workbench.adoc
 - modules/contracts/nav_contracts.adoc
+- modules/tlint/nav_tlint.adoc
 
 ext: 
   collector:
@@ -30,6 +31,7 @@ ext:
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/checks tmp_docs/checks
         - command: git clone --depth 1 git@github.com:trento-project/workbench.git tmp_docs/workbench
         - command: git clone --depth 1 https://github.com/trento-project/contracts tmp_docs/contracts
+        - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/tlint.git tmp_docs/tlint
 
   # Trento official documentation
     - scan:
@@ -106,3 +108,11 @@ ext:
       - dir: tmp_docs/contracts
         files: '*.adoc'
         into: modules/contracts/pages
+      ## Trento Tlint
+    - scan:
+      - dir: tmp_docs/tlint/
+        files: 'README.adoc'
+        into: modules/tlint/pages
+      - dir: tmp_docs/tlint/www/
+        files: '*.adoc'
+        into: modules/tlint/pages/www/ 
