@@ -17,6 +17,7 @@
 *** xref:adr/0014-decoupling-of-trento-checks-from-wanda.adoc[0014: Decouple Trento Checks from Wanda]
 *** xref:adr/0015-activity-logging.adoc[0015: Activity Logging]
 *** xref:adr/0016-discarded-discovery-events.adoc[0016: Discarded Discovery Events]
+*** xref:adr/0017-agent-operations-framework.adoc[0017: Agent Operations Framework]
 *** xref:adr/0018-agent-operations-orchestration.adoc[0018: Agent Operations Orchestration]
 *** xref:adr/0019-e2e-testing-practices.adoc[0019: E2E Testing Practices]
 *** xref:adr/0020-checks-customization.adoc[0020: Checks Customization]
