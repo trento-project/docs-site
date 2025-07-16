@@ -14,6 +14,7 @@ nav:
 - modules/contracts/nav_contracts.adoc
 - modules/tlint/nav_tlint.adoc
 - modules/photofinish/nav_photofinish.adoc
+- modules/support/nav_support.adoc
 - modules/api/nav_api.adoc
 
 
@@ -37,6 +38,7 @@ ext:
         - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/tlint.git tmp_docs/tlint
         - command: git clone --branch antora_readme --depth 1 git@github.com:trento-project/wanda.git tmp_docs/wanda
         - command: git clone --branch md_to_adoc git@github.com:trento-project/photofinish.git tmp_docs/photofinish
+        - command: git clone --branch md_to_adoc git@github.com:trento-project/support.git tmp_docs/support
 
   # Trento official documentation
     - scan:
@@ -137,3 +139,8 @@ ext:
       - dir: tmp_docs/photofinish
         files: '*.adoc'
         into: modules/photofinish/pages
+      ## Trento Support
+    - scan:
+      - dir: tmp_docs/support
+        files: '*.adoc'
+        into: modules/support/pages
