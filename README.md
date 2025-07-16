@@ -13,14 +13,23 @@ git clone git@github.com:trento-project/docs-site.git
 cd docs-site
 ```
 
-### 1. Install Dependency
+### 2. Install Dependency
 
 ```bash
 npm i -D -E antora
 ```
 
-### 1. Build Antora page
+### 3. Build Antora page
 
 ```bash
 npx antora --fetch antora-playbook.yml
 ```
+
+### 4. Start the Docker Web Server
+
+Run the following command to start the web server in detached mode:
+
+```bash
+docker-compose up -d
+```
+Visit [localhost at port 8080](http://localhost:8080)

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web-server:
+    image: nginx:alpine
+    container_name: antora-web-server
+    ports:
+      - "8080:80"
+    volumes:
+      - ./antora_public:/usr/share/nginx/html:ro
+    restart: unless-stopped
