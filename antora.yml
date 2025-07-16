@@ -8,12 +8,14 @@ nav:
 - modules/checks/nav_checks.adoc
 - modules/helm-charts/nav_helm_charts.adoc
 - modules/web/nav_web.adoc
+- modules/wanda/nav_wanda.adoc
 - modules/docs/nav_docs.adoc
 - modules/workbench/nav_workbench.adoc
 - modules/contracts/nav_contracts.adoc
 - modules/tlint/nav_tlint.adoc
+- modules/photofinish/nav_photofinish.adoc
 - modules/api/nav_api.adoc
-- modules/wanda/nav_wanda.adoc
+
 
 ext: 
   collector:
@@ -34,6 +36,7 @@ ext:
         - command: git clone --depth 1 https://github.com/trento-project/contracts tmp_docs/contracts
         - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/tlint.git tmp_docs/tlint
         - command: git clone --branch antora_readme --depth 1 git@github.com:trento-project/wanda.git tmp_docs/wanda
+        - command: git clone --branch md_to_adoc git@github.com:trento-project/photofinish.git tmp_docs/photofinish
 
   # Trento official documentation
     - scan:
@@ -129,3 +132,8 @@ ext:
       - dir: tmp_docs/wanda/guides/
         files: '**/*.{png,jpg,jpeg,svg,gif}'
         into: modules/wanda/images/
+      ## Trento Contracts
+    - scan:
+      - dir: tmp_docs/photofinish
+        files: '*.adoc'
+        into: modules/photofinish/pages
