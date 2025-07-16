@@ -8,11 +8,12 @@ nav:
 - modules/checks/nav_checks.adoc
 - modules/helm-charts/nav_helm_charts.adoc
 - modules/web/nav_web.adoc
-- modules/api/nav_api.adoc
 - modules/docs/nav_docs.adoc
 - modules/workbench/nav_workbench.adoc
 - modules/contracts/nav_contracts.adoc
 - modules/tlint/nav_tlint.adoc
+- modules/api/nav_api.adoc
+- modules/wanda/nav_wanda.adoc
 
 ext: 
   collector:
@@ -32,6 +33,7 @@ ext:
         - command: git clone --depth 1 git@github.com:trento-project/workbench.git tmp_docs/workbench
         - command: git clone --depth 1 https://github.com/trento-project/contracts tmp_docs/contracts
         - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/tlint.git tmp_docs/tlint
+        - command: git clone --branch antora_readme --depth 1 git@github.com:trento-project/wanda.git tmp_docs/wanda
 
   # Trento official documentation
     - scan:
@@ -116,3 +118,14 @@ ext:
       - dir: tmp_docs/tlint/www/
         files: '*.adoc'
         into: modules/tlint/pages/www/ 
+    ## Trento Wanda
+    - scan:
+      - dir: tmp_docs/wanda/
+        files: '*.adoc'
+        into: modules/wanda/pages
+      - dir: tmp_docs/wanda/guides
+        files: '**/*.adoc'
+        into: modules/wanda/pages/
+      - dir: tmp_docs/wanda/guides/
+        files: '**/*.{png,jpg,jpeg,svg,gif}'
+        into: modules/wanda/images/
