@@ -69,7 +69,7 @@ ext:
     ## Trento Web
     - scan:
       - dir: tmp_docs/web/
-        files: 'README.adoc'
+        files: '*.adoc'
         into: modules/web/pages
       - dir: tmp_docs/web/guides
         files: '**/*.adoc'

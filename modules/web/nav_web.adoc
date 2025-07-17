@@ -1,4 +1,5 @@
 * xref:README.adoc[Trento Web]
+** xref:CONTRIBUTING.adoc[How to Contribute to Web?]
 ** xref:monitoring/monitoring.adoc[Monitoring]
 ** xref:alerting/alerting.adoc[Alerting]
 ** Authentication
