@@ -12,11 +12,11 @@ The actual documentation content is maintained in separate upstream repositories
 * https://github.com/trento-project/agent[agent]
 * https://github.com/trento-project/helm-charts[helm-charts]
 * https://github.com/trento-project/ansible/tree/md_to_adoc[ansible] (branch: `md_to_adoc`)
-* https://github.com/trento-project/checks/tree/md_to_adoc[checks] (branch: `md_to_adoc`)
+* https://github.com/trento-project/checks/tree/md_to_adoc[checks]
 * https://github.com/trento-project/workbench[workbench]
 * https://github.com/trento-project/contracts[contracts]
 * https://github.com/trento-project/tlint/tree/md_to_adoc[tlint] (branch: `md_to_adoc`)
-* https://github.com/trento-project/wanda/tree/antora_readme[wanda] (branch: `antora_readme`)
+* https://github.com/trento-project/wanda/tree/antora_readme[wanda]
 * https://github.com/trento-project/photofinish/tree/md_to_adoc[photofinish] (branch: `md_to_adoc`)
 * https://github.com/trento-project/support/tree/md_to_adoc[support] (branch: `md_to_adoc`)
 * https://github.com/trento-project/continuous-delivery/tree/md_to_adoc[continuous-delivery] (branch: `md_to_adoc`)
