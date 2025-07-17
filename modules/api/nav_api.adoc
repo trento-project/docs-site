@@ -1,3 +1,0 @@
-.Trento Api
-* https://www.trento-project.io/web/swaggerui/[Web Swagger Api]
-* https://www.trento-project.io/web/readme.html[Web Elixir Modules and Mix Tasks]

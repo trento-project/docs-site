@@ -17,8 +17,6 @@ nav:
 - modules/support/nav_support.adoc
 - modules/continuous_delivery/nav_continuous_delivery.adoc
 - modules/werkzeugkoffer/nav_werkzeugkoffer.adoc
-- modules/api/nav_api.adoc
-
 
 ext: 
   collector:

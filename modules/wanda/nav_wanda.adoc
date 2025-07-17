@@ -14,4 +14,4 @@
 ** xref:rhai_expressions_cheat_sheet.cheat.adoc[Rhai Expressions Cheat Sheet]
 
 ** https://www.trento-project.io/wanda/swaggerui/[Wanda Swagger Api]
-** https://www.trento-project.io/wanda/readme.html[Wanda Elixir Modules]
+** https://www.trento-project.io/wanda[Wanda Elixir Modules]
