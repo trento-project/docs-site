@@ -16,6 +16,7 @@ nav:
 - modules/photofinish/nav_photofinish.adoc
 - modules/support/nav_support.adoc
 - modules/continuous_delivery/nav_continuous_delivery.adoc
+- modules/werkzeugkoffer/nav_werkzeugkoffer.adoc
 - modules/api/nav_api.adoc
 
 
@@ -41,7 +42,7 @@ ext:
         - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/photofinish.git tmp_docs/photofinish
         - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/support.git tmp_docs/support
         - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/continuous-delivery.git tmp_docs/continuous_delivery
-
+        - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/werkzeugkoffer.git tmp_docs/werkzeugkoffer
   # Trento official documentation
     - scan:
       - dir: tmp_docs/docs_repo/trento/adoc
@@ -151,3 +152,11 @@ ext:
       - dir: tmp_docs/continuous_delivery
         files: '*.adoc'
         into: modules/continuous_delivery/pages
+      ## Trento werkzeugkoffer       
+    - scan:
+      - dir: tmp_docs/werkzeugkoffer/
+        files: 'README.adoc'
+        into: modules/werkzeugkoffer/pages
+      - dir: tmp_docs/werkzeugkoffer/demo-idp/
+        files: 'README.adoc'
+        into: modules/werkzeugkoffer/pages/demo_idp/

@@ -1,1 +1,1 @@
-* xref:README.adoc[Trento Continuous delivery project]
+* xref:README.adoc[Trento Continuous delivery]

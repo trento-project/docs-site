@@ -1,2 +1,2 @@
-* xref:README.adoc[Trento Tlint]
+* xref:README.adoc[Trento TLint]
 ** xref:www/README.adoc[Trento TLint web]

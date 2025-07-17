@@ -1,0 +1,2 @@
+* xref:README.adoc[Trento Werkzeugkoffer]
+** xref:demo_idp/README.adoc[Demo IDP Playbook]
