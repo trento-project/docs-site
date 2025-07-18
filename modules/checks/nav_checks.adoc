@@ -1,2 +1,0 @@
-* xref:README.adoc[Trento Checks]
-** xref:CONTRIBUTING.adoc[How to Contribute]

@@ -1,5 +1,0 @@
-* xref:README.adoc[Trento Helm Charts]
-** xref:CONTRIBUTING.adoc[How to Contribute]
-** xref:cert-manager/cert-manager.adoc[Cert Manager]
-** xref:rabbitmq-tls/rabbitmq-tls.adoc[RabbitMQ TLS]
-** xref:trento-server/trento-server.adoc[Trento Server]

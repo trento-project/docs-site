@@ -5,19 +5,6 @@ nav:
 - modules/trento_documentation/nav_trento_documentation.adoc
 - modules/developer_guide/nav_developer_guide.adoc
 - modules/api_specification/nav_api_specification.adoc
-- modules/agent/nav_agent.adoc
-- modules/ansible/nav_ansible.adoc
-- modules/checks/nav_checks.adoc
-- modules/helm-charts/nav_helm_charts.adoc
-- modules/web/nav_web.adoc
-- modules/wanda/nav_wanda.adoc
-- modules/workbench/nav_workbench.adoc
-- modules/contracts/nav_contracts.adoc
-- modules/tlint/nav_tlint.adoc
-- modules/photofinish/nav_photofinish.adoc
-- modules/support/nav_support.adoc
-- modules/continuous_delivery/nav_continuous_delivery.adoc
-- modules/werkzeugkoffer/nav_werkzeugkoffer.adoc
 
 ext: 
   collector:
@@ -62,24 +49,13 @@ ext:
     - scan:
       - dir: tmp_docs/developer_guide/
         files: 'README.adoc'
-        into: modules/web/pages
+        into: modules/developer_guide/pages
       - dir:  tmp_docs/developer_guide/
         files: '**/*.adoc'
         into: modules/developer_guide/pages/
       - dir: tmp_docs/developer_guide/images/
         files: '**/*.{png,jpg,jpeg,svg,gif}'
         into: modules/developer_guide/images/images
-    ## Trento Web
-    - scan:
-      - dir: tmp_docs/web/
-        files: '*.adoc'
-        into: modules/web/pages
-      - dir: tmp_docs/web/guides
-        files: '**/*.adoc'
-        into: modules/web/pages/
-      - dir: tmp_docs/web/guides/
-        files: '**/*.{png,jpg,jpeg,svg,gif}'
-        into: modules/web/images/
     ## Trento Web
     - scan:
       - dir: tmp_docs/web/

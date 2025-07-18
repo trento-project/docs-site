@@ -1,4 +1,0 @@
-* xref:README.adoc[Trento Agent]
-** xref:CONTRIBUTING.adoc[How to Contribute]
-** xref:ci-cd-variables.adoc[CI-CD-Variables]
-** xref:development/how-to-make-a-release.adoc[How to make a release]
