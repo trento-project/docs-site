@@ -30,17 +30,18 @@ ext:
         - command: git clone --depth 1 https://github.com/SUSE/doc-unversioned tmp_docs/docs_repo
         - command: git clone --branch antora_readme --depth 1 https://github.com/trento-project/web.git tmp_docs/web
         - command: git clone --depth 1 https://github.com/trento-project/agent tmp_docs/agent
-        - command: git clone --depth 1 https://github.com/trento-project/helm-charts tmp_docs/helm-charts 
+        - command: git clone --depth 1 https://github.com/trento-project/helm-charts tmp_docs/helm-charts
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/ansible tmp_docs/ansible
         - command: git clone --depth 1 https://github.com/trento-project/checks tmp_docs/checks
-        - command: git clone --depth 1 git@github.com:trento-project/workbench.git tmp_docs/workbench
+        - command: git clone --depth 1 https://github.com/trento-project/workbench.git tmp_docs/workbench
         - command: git clone --depth 1 https://github.com/trento-project/contracts tmp_docs/contracts
-        - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/tlint.git tmp_docs/tlint
-        - command: git clone --depth 1 git@github.com:trento-project/wanda.git tmp_docs/wanda
-        - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/photofinish.git tmp_docs/photofinish
-        - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/support.git tmp_docs/support
-        - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/continuous-delivery.git tmp_docs/continuous_delivery
-        - command: git clone --branch md_to_adoc --depth 1 git@github.com:trento-project/werkzeugkoffer.git tmp_docs/werkzeugkoffer
+        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/tlint.git tmp_docs/tlint
+        - command: git clone --depth 1 https://github.com/trento-project/wanda.git tmp_docs/wanda
+        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/photofinish.git tmp_docs/photofinish
+        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/support.git tmp_docs/support
+        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/continuous-delivery.git tmp_docs/continuous_delivery
+        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/werkzeugkoffer.git tmp_docs/werkzeugkoffer
+
   # Trento official documentation
     - scan:
       - dir: tmp_docs/docs_repo/trento/adoc
