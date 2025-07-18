@@ -10,5 +10,3 @@
 ** Development
 *** xref:development/environment_variables.adoc[Environment Variables]
 *** xref:development/hack_on_the_trento.adoc[Hack on the Trento Web]
-** https://www.trento-project.io/web/swaggerui/[Web Swagger Api]
-** https://www.trento-project.io/web[Web Elixir Modules and Mix Tasks]

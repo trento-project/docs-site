@@ -2,14 +2,16 @@ name: docs
 title: Trento
 version: ~
 nav:
-- modules/trento_documentation/nav.adoc
+- modules/trento_documentation/nav_trento_documentation.adoc
+- modules/developer_guide/nav_developer_guide.adoc
+- modules/api_specification/nav_api_specification.adoc
 - modules/agent/nav_agent.adoc
 - modules/ansible/nav_ansible.adoc
 - modules/checks/nav_checks.adoc
 - modules/helm-charts/nav_helm_charts.adoc
 - modules/web/nav_web.adoc
 - modules/wanda/nav_wanda.adoc
-- modules/docs/nav_docs.adoc
+
 - modules/workbench/nav_workbench.adoc
 - modules/contracts/nav_contracts.adoc
 - modules/tlint/nav_tlint.adoc
@@ -26,7 +28,7 @@ ext:
         - dir: tmp_docs
     ## Documentation Fetching from diffrent upstream repositories
     - run:
-        - command: git clone --depth 1 https://github.com/trento-project/docs.git tmp_docs/docs
+        - command: git clone --branch restructure_docs --depth 1 https://github.com/trento-project/docs.git tmp_docs/developer_guide
         - command: git clone --depth 1 https://github.com/SUSE/doc-unversioned tmp_docs/docs_repo
         - command: git clone --branch antora_readme --depth 1 https://github.com/trento-project/web.git tmp_docs/web
         - command: git clone --depth 1 https://github.com/trento-project/agent tmp_docs/agent
@@ -42,7 +44,7 @@ ext:
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/continuous-delivery.git tmp_docs/continuous_delivery
         - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/werkzeugkoffer.git tmp_docs/werkzeugkoffer
 
-  # Trento official documentation
+  # Trento official documentation repo https://github.com/SUSE/doc-unversioned
     - scan:
       - dir: tmp_docs/docs_repo/trento/adoc
         files: '**/*.adoc'
@@ -55,18 +57,30 @@ ext:
     - scan:
         dir: ./tmp_docs/docs_repo/antora_tmp
         files: 'antora.yml'
-# Trento documentation repository
+    
+    # Trento upstream projects documentation
+    ## Trento docs repo https://github.com/trento-project/docs
     - scan:
-      - dir: tmp_docs/docs/
+      - dir: tmp_docs/developer_guide/
         files: 'README.adoc'
         into: modules/web/pages
-      - dir:  tmp_docs/docs/
+      - dir:  tmp_docs/developer_guide/
         files: '**/*.adoc'
-        into: modules/docs/pages/
-      - dir: tmp_docs/docs/images/
+        into: modules/developer_guide/pages/
+      - dir: tmp_docs/developer_guide/images/
         files: '**/*.{png,jpg,jpeg,svg,gif}'
-        into: modules/docs/images/images
-# Trento upstream projects documentation
+        into: modules/developer_guide/images/images
+    ## Trento Web
+    - scan:
+      - dir: tmp_docs/web/
+        files: '*.adoc'
+        into: modules/web/pages
+      - dir: tmp_docs/web/guides
+        files: '**/*.adoc'
+        into: modules/web/pages/
+      - dir: tmp_docs/web/guides/
+        files: '**/*.{png,jpg,jpeg,svg,gif}'
+        into: modules/web/images/
     ## Trento Web
     - scan:
       - dir: tmp_docs/web/
