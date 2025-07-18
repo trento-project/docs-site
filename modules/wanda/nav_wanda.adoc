@@ -1,17 +1,12 @@
 * xref:README.adoc[Trento Wanda]
-** xref:CONTRIBUTING.adoc[CONTRIBUTING]
 
 ** Checks development
 *** xref:specification.adoc[Checks Specification]
 *** xref:expression_language.adoc[Expression Language]
 *** xref:gatherers.adoc[Gatherers]
 
-
 ** Hack on Wanda
 *** xref:development/demo.adoc[Demo environment]
 *** xref:development/hack_on_wanda.adoc[Development Setup]
 
 ** xref:rhai_expressions_cheat_sheet.cheat.adoc[Rhai Expressions Cheat Sheet]
-
-** https://www.trento-project.io/wanda/swaggerui/[Wanda Swagger Api]
-** https://www.trento-project.io/wanda[Wanda Elixir Modules]

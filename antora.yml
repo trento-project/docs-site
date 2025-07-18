@@ -11,7 +11,6 @@ nav:
 - modules/helm-charts/nav_helm_charts.adoc
 - modules/web/nav_web.adoc
 - modules/wanda/nav_wanda.adoc
-
 - modules/workbench/nav_workbench.adoc
 - modules/contracts/nav_contracts.adoc
 - modules/tlint/nav_tlint.adoc
