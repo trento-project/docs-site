@@ -1,5 +1,5 @@
 name: docs
-title: Trento
+title: Trento Documentation
 version: ~
 nav:
 - modules/trento_documentation/nav_trento_documentation.adoc
