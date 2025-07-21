@@ -6,7 +6,7 @@ The actual documentation content is maintained in separate upstream repositories
 
 == Cloned Repositories
 
-* https://github.com/trento-project/docs[docs]
+* https://github.com/trento-project/docs[docs] (branch: 'restructure_docs')
 * https://github.com/SUSE/doc-unversioned[doc-unversioned]
 * https://github.com/trento-project/web/tree/antora_readme[web] (branch: `antora_readme`)
 * https://github.com/trento-project/agent[agent]
@@ -15,12 +15,12 @@ The actual documentation content is maintained in separate upstream repositories
 * https://github.com/trento-project/checks/tree/md_to_adoc[checks]
 * https://github.com/trento-project/workbench[workbench]
 * https://github.com/trento-project/contracts[contracts]
-* https://github.com/trento-project/tlint/tree/md_to_adoc[tlint] (branch: `md_to_adoc`)
+* https://github.com/trento-project/tlint/tree/md_to_adoc[tlint]
 * https://github.com/trento-project/wanda/tree/antora_readme[wanda]
-* https://github.com/trento-project/photofinish/tree/md_to_adoc[photofinish] (branch: `md_to_adoc`)
+* https://github.com/trento-project/photofinish/tree/md_to_adoc[photofinish]
 * https://github.com/trento-project/support/tree/md_to_adoc[support] (branch: `md_to_adoc`)
-* https://github.com/trento-project/continuous-delivery/tree/md_to_adoc[continuous-delivery] (branch: `md_to_adoc`)
-* https://github.com/trento-project/werkzeugkoffer/tree/md_to_adoc[werkzeugkoffer] (branch: `md_to_adoc`)
+* https://github.com/trento-project/continuous-delivery[continuous-delivery]
+* https://github.com/trento-project/werkzeugkoffer/tree/md_to_adoc[werkzeugkoffer]
 
 == 🛠️ How to Build the Documentation Site
 
