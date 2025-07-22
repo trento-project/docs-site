@@ -37,27 +37,21 @@
 *** xref:internal_notes/release.adoc[Release Process]
 *** xref:internal_notes/test-manual-installation-with-agents.adoc[Test Manual Installation with Agents]
 
-// Trento upstream Projects
-
 ** Components
-// Trento Agent https://github.com/trento-project/agent
+
 *** xref:docs:agent:README.adoc[Trento Agent]
 **** xref:docs:agent:ci-cd-variables.adoc[CI-CD-Variables]
 **** xref:docs:agent:development/how-to-make-a-release.adoc[How to make a release]
 
-// Trento Ansible https://github.com/trento-project/ansible
 *** xref:docs:ansible:README.adoc[Trento Ansible]
 
-// Trento Checks https://github.com/trento-project/checks
 *** xref:docs:checks:README.adoc[Trento Checks]
 
-// Trento Helm Charts https://github.com/trento-project/helm-charts
 *** xref:docs:helm-charts:README.adoc[Trento Helm Charts]
 **** xref:docs:helm-charts:cert-manager/cert-manager.adoc[Cert Manager]
 **** xref:docs:helm-charts:rabbitmq-tls/rabbitmq-tls.adoc[RabbitMQ TLS]
 **** xref:docs:helm-charts:trento-server/trento-server.adoc[Trento Server]
 
-// Trento Web https://github.com/trento-project/web
 *** xref:docs:web:README.adoc[Trento Web]
 **** xref:docs:web:monitoring/monitoring.adoc[Monitoring]
 **** xref:docs:web:alerting/alerting.adoc[Alerting]
@@ -70,50 +64,36 @@
 ***** xref:docs:web:development/environment_variables.adoc[Environment Variables]
 ***** xref:docs:web:development/hack_on_the_trento.adoc[Hack on the Trento Web]
 
-// Trento Wanda https://github.com/trento-project/wanda
 *** xref:docs:wanda:README.adoc[Trento Wanda]
-// Trento Wanda guides https://github.com/trento-project/wanda/tree/main/guides
 **** Checks development
 ***** xref:docs:wanda:specification.adoc[Checks Specification]
 ***** xref:docs:wanda:expression_language.adoc[Expression Language]
 ***** xref:docs:wanda:gatherers.adoc[Gatherers]
-// Trento Wanda guides/development https://github.com/trento-project/wanda/tree/main/guides/development
 **** Hack on Wanda
 ***** xref:docs:wanda:development/demo.adoc[Demo environment]
 ***** xref:docs:wanda:development/hack_on_wanda.adoc[Development Setup]
 **** xref:docs:wanda:rhai_expressions_cheat_sheet.cheat.adoc[Rhai Expressions Cheat Sheet]
 
-// Trento Workbench https://github.com/trento-project/workbench
 *** xref:docs:workbench:README.adoc[Trento Workbench]
 
-// Trento Contracts https://github.com/trento-project/contracts
 *** xref:docs:contracts:README.adoc[Trento Contracts]
 
-// Trento TLint https://github.com/trento-project/tlint
 *** xref:docs:tlint:README.adoc[Trento TLint]
 **** xref:docs:tlint:www/README.adoc[Trento TLint web]
 
-// Trento Photofinish https://github.com/trento-project/photofinish
 *** xref:docs:photofinish:README.adoc[Trento Photofinish]
 
-// Trento Supports https://github.com/trento-project/support
 *** xref:docs:support:README.adoc[Trento Support Utilities]
 
-// Trento Continuous delivery https://github.com/trento-project/continuous-delivery
 *** xref:docs:continuous_delivery:README.adoc[Trento Continuous delivery]
 
-// Trento Werkzeugkoffer https://github.com/trento-project/werkzeugkoffer
 *** xref:docs:werkzeugkoffer:README.adoc[Trento Werkzeugkoffer]
-// Trento Werkzeugkoffer https://github.com/trento-project/werkzeugkoffer/tree/main/demo-idp
 **** xref:docs:werkzeugkoffer:demo_idp/README.adoc[Demo IDP Playbook]
 
-// Trento MCP Server https://github.com/trento-project/mcp-server
 *** xref:docs:mcp-server:README.adoc[Trento MCP Server]
-// Trento MCP Server docs https://github.com/trento-project/mcp-server/tree/TRNT-3844-3/docs
 **** xref:docs:mcp-server:docs/README.adoc[Trento MCP Server documentation]
 ***** xref:docs:mcp-server:docs/integration-suse-ai.adoc[SUSE AI integration]
 ***** xref:docs:mcp-server:docs/integration-vscode.adoc[VS Code integration]
 ***** xref:docs:mcp-server:docs/configuration-options.adoc[Configuration options]
-// Trento MCP Server docs/developer https://github.com/trento-project/mcp-server/tree/TRNT-3844-3/docs/developer
 **** xref:docs:mcp-server:docs/developer/README.adoc[Trento MCP Server developer documentation]
 ***** xref:docs:mcp-server:docs/developer/getting-started.adoc[Getting started with Trento MCP Server]
