@@ -10,7 +10,7 @@ ext:
   collector:
     ## Remove previous documentation
     - clean:
-        - dir: antora_public
+        - dir: trento_docs_site_public
         - dir: tmp_docs
     ## Documentation Fetching from diffrent upstream repositories
     - run:
@@ -30,7 +30,6 @@ ext:
         - command: git clone --depth 1 https://github.com/trento-project/continuous-delivery.git tmp_docs/continuous_delivery
         - command: git clone --depth 1 https://github.com/trento-project/werkzeugkoffer.git tmp_docs/werkzeugkoffer
         - command: git clone --branch TRNT-3844-3 --depth 1 https://github.com/trento-project/mcp-server.git tmp_docs/mcp-server
-
 
   # Trento official documentation repo https://github.com/SUSE/doc-unversioned
     - scan:

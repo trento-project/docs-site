@@ -7,5 +7,5 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./antora_public:/usr/share/nginx/html:ro
+      - ./trento_docs_site_public:/usr/share/nginx/html:ro
     restart: unless-stopped
