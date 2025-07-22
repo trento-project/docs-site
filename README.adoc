@@ -21,6 +21,7 @@ The actual documentation content is maintained in separate upstream repositories
 * https://github.com/trento-project/support/tree/md_to_adoc[support] (branch: `md_to_adoc`)
 * https://github.com/trento-project/continuous-delivery[continuous-delivery]
 * https://github.com/trento-project/werkzeugkoffer/tree/md_to_adoc[werkzeugkoffer]
+* https://github.com/trento-project/mcp-server[mcp-server]
 
 == 🛠️ How to Build the Documentation Site
 

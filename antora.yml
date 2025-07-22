@@ -29,6 +29,8 @@ ext:
         - command: git clone --depth 1 https://github.com/trento-project/support.git tmp_docs/support
         - command: git clone --depth 1 https://github.com/trento-project/continuous-delivery.git tmp_docs/continuous_delivery
         - command: git clone --depth 1 https://github.com/trento-project/werkzeugkoffer.git tmp_docs/werkzeugkoffer
+        - command: git clone --branch TRNT-3844-3 --depth 1 https://github.com/trento-project/mcp-server.git tmp_docs/mcp-server
+
 
   # Trento official documentation repo https://github.com/SUSE/doc-unversioned
     - scan:
@@ -148,3 +150,11 @@ ext:
       - dir: tmp_docs/werkzeugkoffer/demo-idp/
         files: 'README.adoc'
         into: modules/werkzeugkoffer/pages/demo_idp/
+## Trento MCP Server https://github.com/trento-project/mcp-server/tree/main
+    - scan:
+      - dir: tmp_docs/mcp-server/
+        files: '*.adoc'
+        into: modules/mcp-server/pages
+      - dir: tmp_docs/mcp-server/docs/
+        files: '**/*.adoc'
+        into: modules/mcp-server/pages/docs
