@@ -57,4 +57,4 @@ Start a local web server to preview the generated documentation:
 npx serve trento_docs_site_public/
 ----
 
-Open your browser and visit:  http://localhost:8080[localhost at port 8080]
+Open your browser and visit:  http://localhost:3000[localhost at port 3000]
