@@ -8,7 +8,7 @@ The actual documentation content is maintained in separate upstream repositories
 
 * https://github.com/trento-project/docs[docs] (branch: 'restructure_docs')
 * https://github.com/SUSE/doc-unversioned[doc-unversioned]
-* https://github.com/trento-project/web/tree/antora_readme[web] (branch: `antora_readme`)
+* https://github.com/trento-project/web/tree/antora_readme[web]
 * https://github.com/trento-project/agent[agent]
 * https://github.com/trento-project/helm-charts[helm-charts]
 * https://github.com/trento-project/ansible/tree/md_to_adoc[ansible] (branch: `md_to_adoc`)
