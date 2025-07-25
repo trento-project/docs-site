@@ -51,10 +51,14 @@ This will generate the site into the trento_docs_site_public/ folder.
 
 === 4. Preview Locally
 
-Start a local web server to preview the generated documentation:
+To preview the generated site in your browser, start a local static web server:
+
 [source,bash]
 ----
-npx serve trento_docs_site_public/
+npx http-server trento_docs_site_public/ -c-1 -p 3000
 ----
+
+- `-c-1`: Disables caching
+- `-p 3000`: Runs the server on port 3000
 
 Open your browser and visit:  http://localhost:3000[localhost at port 3000]
