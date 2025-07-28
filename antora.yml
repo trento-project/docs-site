@@ -19,7 +19,7 @@ ext:
         - command: git clone --depth 1 https://github.com/trento-project/web.git tmp_docs/web
         - command: git clone --depth 1 https://github.com/trento-project/agent tmp_docs/agent
         - command: git clone --depth 1 https://github.com/trento-project/helm-charts tmp_docs/helm-charts
-        - command: git clone --branch md_to_adoc --depth 1 https://github.com/trento-project/ansible tmp_docs/ansible
+        - command: git clone --depth 1 https://github.com/trento-project/ansible tmp_docs/ansible
         - command: git clone --depth 1 https://github.com/trento-project/checks tmp_docs/checks
         - command: git clone --depth 1 https://github.com/trento-project/workbench.git tmp_docs/workbench
         - command: git clone --depth 1 https://github.com/trento-project/contracts tmp_docs/contracts
