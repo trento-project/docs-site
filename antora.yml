@@ -14,7 +14,7 @@ ext:
         - dir: tmp_docs
     ## Documentation Fetching from diffrent upstream repositories
     - run:
-        - command: git clone --branch restructure_docs --depth 1 https://github.com/trento-project/docs.git tmp_docs/developer_guide
+        - command: git clone --depth 1 https://github.com/trento-project/docs.git tmp_docs/developer_guide
         - command: git clone --depth 1 https://github.com/SUSE/doc-unversioned tmp_docs/docs_repo
         - command: git clone --depth 1 https://github.com/trento-project/web.git tmp_docs/web
         - command: git clone --depth 1 https://github.com/trento-project/agent tmp_docs/agent
