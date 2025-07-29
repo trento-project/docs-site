@@ -18,7 +18,7 @@ The actual documentation content is maintained in separate upstream repositories
 * https://github.com/trento-project/tlint[tlint]
 * https://github.com/trento-project/wanda[wanda]
 * https://github.com/trento-project/photofinish[photofinish]
-* https://github.com/trento-project/support
+* https://github.com/trento-project/support[support]
 * https://github.com/trento-project/continuous-delivery[continuous-delivery]
 * https://github.com/trento-project/werkzeugkoffer[werkzeugkoffer]
 * https://github.com/trento-project/mcp-server[mcp-server]
